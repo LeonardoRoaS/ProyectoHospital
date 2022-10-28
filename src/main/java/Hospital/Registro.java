@@ -19,7 +19,6 @@ public class Registro {
             return false;
         }
     }
-    //METODO 2 PARA AGREGAR (CON OBJETO DEFINIDO)
     //ELIMINAR PERSONA
     public boolean eliminarPersona (String nombre, String apellido){
         Persona persona = this.buscarPersona(nombre, apellido);
@@ -59,7 +58,7 @@ public class Registro {
     }
 
 
-
+    //Buscar a mayores de 60 años.
     public void Mayores60(){
         System.out.println("\nPersonas Mayores de 60 años:");
         for (Persona persona : this.personas){
@@ -69,9 +68,10 @@ public class Registro {
         }
     }
 
-    public void buscarPersona0 (String nombre, String apellido){
+    //Buscar personas por su nombre.
+    public void buscarPersona0 (String nombre){
         for (Persona persona : this.personas){
-            if (persona.getNombre().equalsIgnoreCase(nombre) && persona.getApellido().equalsIgnoreCase(apellido)){
+            if (persona.getNombre().equalsIgnoreCase(nombre)){
                 System.out.println("Persona encontrada: "+persona.toString());
             }
         }

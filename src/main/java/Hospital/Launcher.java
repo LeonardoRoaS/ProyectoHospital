@@ -8,20 +8,20 @@ public class Launcher {
     }
     public void inicializar() {
         Registro registro = new Registro();
-        //Agregando a la lista
+
+        //Agregando personas a la lista
         registro.agregarPersona("Leo", "Roa", 19);
         registro.agregarPersona("Manuel", "Rodriguez", 70);
         registro.agregarPersona("Manolo", "Perez", 61);
-        //Agregar creando un objeto
         System.out.println("========= Lista de personas ==========");
         registro.mostrarPersonas();
 
-        //buscar personas Mayores de 60 años
+        //buscar personas Mayores de 60 años.
         System.out.println("===============================");
         registro.Mayores60();
 
-        //buscar personas por nombre sin discriminar de mayusculas y minusculas
+        //buscar personas por nombre sin discriminar de mayusculas y minusculas.
         System.out.println("===============================");
-        registro.buscarPersona0("Leo","roa");
+        registro.buscarPersona0("Leo");
     }
 }

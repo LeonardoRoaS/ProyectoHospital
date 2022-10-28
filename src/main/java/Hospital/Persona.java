@@ -5,6 +5,7 @@ public class Persona {
     private String nombre, apellido;
     private int edad;
 
+    //Asignar Objeto
     public Persona(String nombre, String apellido, int edad) {
         this.nombre = nombre;
         this.apellido = apellido;
